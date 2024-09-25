@@ -1,0 +1,8 @@
+package com.LeaveManagement.Services;
+
+
+import com.LeaveManagement.Model.Dto.LeaveRequestDto;
+
+public interface LeaveRequestService extends AbstarctService<LeaveRequestDto>{
+
+}

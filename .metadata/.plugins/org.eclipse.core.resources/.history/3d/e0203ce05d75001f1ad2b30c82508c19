@@ -1,0 +1,5 @@
+package com.LeaveManagement.Model.Mappers;
+
+public class LoginRequestMapper {
+
+}

@@ -1,0 +1,17 @@
+package com.LeaveManagement.Services;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import com.LeaveManagement.Model.Dto.EmployeeDto;
+import com.LeaveManagement.Model.Dto.LeaveRequestDto;
+
+public interface EmployeeService {
+	public EmployeeDto addOneEmployee(EmployeeDto EmployeeDto);
+	public Page<EmployeeDto> getAllEmployee(Pageable pageable);
+	public void deleteOneEmployee(long id);
+	
+	public EmployeeDto getOneEmployee(long id);
+	public EmployeeDto assigLeaveRequestToUtilisateur(long idUser,LeaveRequestDto LeaveRequestDto);
+
+	}
+

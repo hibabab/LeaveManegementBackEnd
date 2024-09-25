@@ -1,0 +1,5 @@
+package com.LeaveManagement.Services;
+
+public interface AbstarctService {
+
+}

@@ -1,0 +1,40 @@
+package com.LeaveManagement.Services;
+
+import com.LeaveManagement.Model.Dto.LeaveRequestDto;
+import com.LeaveManagement.Repositories.LeaveRequestRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class LeaveRequestServiceImpl implements LeaveRequestService {
+
+    @Autowired
+    private LeaveRequestRepository leaveRequestRepository;
+
+    @Override
+    public Integer save(LeaveRequestDto leaveRequestDto) {
+        // Convertir le DTO en entité, sauvegarder, et retourner l'ID
+        // Implémentez la conversion et la logique de sauvegarde
+    }
+
+    @Override
+    public List<LeaveRequestDto> findAll() {
+        // Récupérer toutes les demandes de congés et les convertir en DTO
+        // Implémentez la logique de récupération
+    }
+
+    @Override
+    public LeaveRequestDto findById(Integer id) {
+        // Trouver la demande de congé par ID et la convertir en DTO
+        // Implémentez la logique de recherche
+    }
+
+    @Override
+    public void delete(Integer id) {
+        // Supprimer la demande de congé par ID
+        // Implémentez la logique de suppression
+    }
+}

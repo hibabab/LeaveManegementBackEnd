@@ -1,0 +1,48 @@
+package com.LeaveManagement.Services.Impl;
+
+import org.springframework.stereotype.Service;
+import com.LeaveManagement.Services.EmployeeService;
+import com.LeaveManagement.Model.Dto.EmployeeDto;
+import com.LeaveManagement.Model.Dto.LeaveRequestDto;
+import com.LeaveManagement.Repository.LeaveRequestRepository;
+import com.LeaveManagement.Repository.EmployeeRepository;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+
+   
+	private final LeaveRequestRepository leaveRequestRepository;
+	private final EmployeeRepository EmployeeRepository;
+    @Override
+    public EmployeeDto assigLeaveRequestToUtilisateur(long idUser, LeaveRequestDto leaveRequestDto) {
+        // Logic to assign a leave request to a user
+        return null;
+    }
+
+	@Override
+	public EmployeeDto addOne(EmployeeDto dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Page<EmployeeDto> getAll(Pageable pageable) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteOne(long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public EmployeeDto getOne(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

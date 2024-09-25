@@ -1,0 +1,18 @@
+package com.LeaveManagement.Services;
+
+import java.util.List;
+
+public interface AbstractService<T> {
+    
+    // Enregistrer ou mettre à jour l'entité
+    Integer save(T dto);
+
+    // Trouver toutes les entités
+    List<T> findAll();
+
+    // Trouver une entité par ID
+    T findById(Integer id);
+
+    // Supprimer une entité par ID
+    void delete(Integer id);
+}
